@@ -1,0 +1,15 @@
+config.tx_extbase {
+    persistence {
+        classes {
+            Turn3\TtaddressRtefield\Domain\Model\TtaddressRtefield {
+                mapping {
+                    tableName = tt_address
+                    recordType =
+                }
+            }
+        }
+    }
+    objects {
+        TYPO3\TtAddress\Domain\Model\Address.className   = Turn3\TtaddressRtefield\Domain\Model\TtaddressRtefield
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "turn3/ttaddress_rtefield",
+  "type": "typo3-cms-extension",
+  "description": "TYPO3 Theme",
+  "authors": [
+    {
+      "name": "Elena Kuprienko",
+      "role": "Developer",
+      "homepage": "http://www.kuprienko.de/"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Turn3\\TtaddressRtefield\\": "Classes"
+    }
+  }
+}
