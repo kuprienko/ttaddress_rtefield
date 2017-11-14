@@ -1,10 +1,6 @@
 <?php
 
-// creating a model that extends the address base model, 
-// add new field in this custom model and 
-// tell extbase to use this altered model for the address records.
-
-namespace Turn3\ttaddress_rtefield\Domain\Model;
+namespace Turn3\TtaddressRtefield\Domain\Model;
 
 /**
  * Address model for default address
@@ -16,7 +12,7 @@ class TtaddressRtefield extends \TYPO3\TtAddress\Domain\Model\Address {
    /**
     * @var string
     */
-   protected $TxTtaddressrtefieldRtecontent;
+   protected $txTtaddressrtefieldRtecontent = '';
 
    /**
     * Get tx_ttaddressrtefield_rtecontent
@@ -25,8 +21,7 @@ class TtaddressRtefield extends \TYPO3\TtAddress\Domain\Model\Address {
     */
    public function getTxTtaddressrtefieldRtecontent()
    {
-      // return "teststring";
-      return $this->TxTtaddressrtefieldRtecontent;
+      return $this->txTtaddressrtefieldRtecontent;
    }
 
    /**
@@ -35,8 +30,8 @@ class TtaddressRtefield extends \TYPO3\TtAddress\Domain\Model\Address {
     * @param string $tx_ttaddressrtefield_rtecontent
     * @return void
     */
- #  public function setTxTtaddressrtefieldRtecontent($TxTtaddressrtefieldRtecontent)
- #  {
- #     $this->TxTtaddressrtefieldRtecontent = $TxTtaddressrtefieldRtecontent;
- #  }
+   public function setTxTtaddressrtefieldRtecontent($txTtaddressrtefieldRtecontent)
+   {
+      $this->txTtaddressrtefieldRtecontent = $txTtaddressrtefieldRtecontent;
+   }
 }

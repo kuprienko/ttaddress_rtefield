@@ -4,7 +4,9 @@ config.tx_extbase {
             Turn3\TtaddressRtefield\Domain\Model\TtaddressRtefield {
                 mapping {
                     tableName = tt_address
-                    recordType =
+                    columns {
+                    	tx_ttaddressrtefield_rtecontent.mapOnProperty = txTtaddressrtefieldRtecontent
+                    }
                 }
             }
         }
