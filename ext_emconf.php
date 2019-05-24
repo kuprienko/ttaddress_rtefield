@@ -29,7 +29,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author_company' => '',
-	'version' => '7.6.0',
+	'version' => '8.7.26',
 	'constraints' => array(
 		'depends' => array(
 			'tt_address' => '',
@@ -39,9 +39,11 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-    'autoload' => array(
-        'classmap' => array('Classes')
-    )
+    'autoload' => [
+        'psr-4' => [
+            'Turn3\\TtaddressRtefield\\' => 'Classes'
+        ],
+    ]
 );
 
 ?>
